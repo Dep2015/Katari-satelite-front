@@ -99,7 +99,7 @@ const Dashboard = () => {
           </div>
         </div>
        
-        <div >
+        <div className="panel">
 
         <div className="dashboard-stats">
           <div className="stats-card">
