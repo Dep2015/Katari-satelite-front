@@ -1,0 +1,259 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .dashboard-content {
+    padding: 20px;
+    background-color: #f5f5f5;
+    flex: 1;
+  }
+
+  .container {
+    display: flex;
+    align-items: start; /* Alinea los elementos arriba */
+    gap: 20px; /* Espacio entre los elementos */
+}
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .blue-button {
+    background-color: #1a237e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filters {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filters-left {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .filters-left > div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filters-left label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .filters-left select, .filters-left input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .date-selector {
+    display: flex;
+  }
+  
+  .date-selector input {
+    flex: 1;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .date-selector-button {
+    background-color: #1a237e;
+    color: white;
+    padding: 8px 12px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .stats-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stats-card p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .stats-card h2 {
+    margin: 10px 0 0;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .status-flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .status-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .status-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .status-box.active .status-icon {
+    background-color: #3f51b5;
+    color: white;
+  }
+  
+  .status-label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .status-connector {
+    height: 2px;
+    background-color: #e0e0e0;
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .projects-table {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #f5f5f5;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    font-weight: 600;
+    color: #666;
+  }
+  
+  .status-badge {
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    display: inline-block;
+  }
+  
+  .status-en-entrega {
+    background-color: #e8f5e9;
+    color: #388e3c;
+  }
+  
+  .status-en-proceso {
+    background-color: #e3f2fd;
+    color: #1976d2;
+  }
+  
+  .status-finalizado {
+    background-color: #fff3e0;
+    color: #f57c00;
+  }
+  
+  .status-en-espera {
+    background-color: #ffebee;
+    color: #d32f2f;
+  }
+  
+  .view-more {
+    background: none;
+    border: none;
+    color: #3f51b5;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background: none;
+    border: none;
+    color: #3f51b5;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .page-number {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .page-number.active {
+    background-color: #3f51b5;
+    color: white;
+  }
+  
